@@ -125,7 +125,7 @@ function addNewProduct() {
         {
             name: "manufacturerName",
             type: "input",
-            message: "Enter manufacturer's name:",
+            message: "Enter Manufacturer's name:",
         },
         {
             name: "productName",
@@ -135,12 +135,12 @@ function addNewProduct() {
         {
             name: "department",
             type: "input",
-            message: "Enter department:",
+            message: "Enter Department:",
         },
         {
             name: "quantity",
             type: "input",
-            message: "Enter quantity:",  //Has to be a number.
+            message: "Enter Quantity:",  //Has to be a number.
             validate: function (value) {
                 if (isNaN(value) === false) {
                     return true;
@@ -152,7 +152,7 @@ function addNewProduct() {
         {
             name: "price",   //Has to be a number.
             type: "input",
-            message: "Enter price:",
+            message: "Enter Price:",
             validate: function (value) {
                 if (isNaN(value) === false) {
                     return true;

@@ -2,7 +2,7 @@
 
 ## Customer Interface:
 
-Amazon-like storefront made with MySQL &amp; Node.js
+Bamazon is an 'Amazon-like' storefront made with MySQL &amp; Node.js
 
 The customer interface is called through node.js by typing the following command:
 
@@ -13,20 +13,20 @@ The customer interface is called through node.js by typing the following command
 &NewLine;
 &nbsp; 
 
-Running this application will first display all of the items available for sale. Include the ids, names, and prices of products for sale.
-
+Bamazon will first display all of the products available for sale.
 ![Command prompt](/assets/images/storefront.jpg)
 
 
-The app prompts users with two questions:
+The app then prompts the customer with two questions in order to select the item that they want to buy:
 
 * The ID of the product they would like to buy?
 * The second message should ask how many units of the product they would like to buy?
 
+
 &NewLine;
 &nbsp; 
 
-Once order has been placed, the app checks the store inventory to make sure that the store has enough of the product to fullfil customer's order.  If story has enough quantity, the SQL database is updated toreflect the remaining quantity. The customer then shown total cost of their purchase.
+Once the selection is made, the app checks the store inventory to make sure that the store has sufficient inventory to fullfil customer's order.  If store has enough quantity, the order is completed and the product database is updated to reflect the remaining quantity. The customer then shown total cost of their purchase.
 
 
 
@@ -35,7 +35,7 @@ Once order has been placed, the app checks the store inventory to make sure that
 &NewLine;
 &nbsp; 
 
-If quantity is not available, the app tells the customer that the store does not have sufficient quantity to complete the order and will prevent the order from going through.
+If the inventory is not available, the app tells the customer that the store does not have sufficient quantity to fill the order and will stop the order from completing.
 
 ![Command prompt](/assets/images/notavailable.jpg)
 
@@ -51,22 +51,22 @@ If quantity is not available, the app tells the customer that the store does not
 &nbsp; 
 ## Manager Interface
 
-The manager's interface is node application called bamazonManager.js. Running this application will:
+The manager's interface is node application called bamazonManager.js. 
 The manager's interface is called through node.js by typing the following command:
 
 *Node bamazonManager.js.*
 
 ![Command prompt](/assets/images/managerprompt.jpg)
 
-Running bamazonManager.js gives the a set of menu options:
+BamazonManager.js first displays a set of 5 menu options:
 * __View Products for Sale__ -Lists every available item.
 * __View Low Inventory__ - Lists all items with an inventory count lower than five.
-* __Add to Inventory__ - Lets the manager add more of any item currently in the store.
+* __Add to Inventory__ - Lets the manager add more inventory to any item currently listed in the store.
 * __Add New Product__ -Allows the manager to add a completely new product to the store.
 * __Exit__ -Ends program.
 
 
-To select an option, type the corresponding number and hit enter.
+To select an option, type the corresponding number and hit *Enter*.
 
 ![Command prompt](/assets/images/managermenu.jpg)
 
@@ -75,7 +75,7 @@ To select an option, type the corresponding number and hit enter.
 &nbsp; 
 ### View Products for Sale
 
-From the main menu select option 1: __View Product for sale.__  
+From the main menu, select option 1: __View Product for sale__ and press *Enter*. 
 The entire store inventory will be displayed.
 
 
@@ -85,7 +85,7 @@ The entire store inventory will be displayed.
 &nbsp; 
 ### View Low Inventory 
 
-From the main menu select option 2: __View Low inventory.__  
+From the main menu, select option 2: __View Low inventory__and press *Enter*. 
 Any items store inventory that as a quantity of less than 5 will be displayed.
 
 ![Command prompt](/assets/images/low.jpg)
@@ -95,9 +95,9 @@ Any items store inventory that as a quantity of less than 5 will be displayed.
 &nbsp; 
 ### Add to Inventory 
 
-From the main menu select option 3: __Add to Inventory.__  
-The entire store inventory will be displayed followed by the following questions:
-* Enter the Id Number: - The coresponding id of the product that who's quantity is being increased.
+From the main menu select option 3: __Add to Inventory__and press *Enter*.   
+The entire store inventory will be displayed.  The user will then have to answer two prompts:
+* Enter the Id Number: - The id selects the product who's quantity is being increased.
 * Enter the quantity: - The amount of product that will be added.
 
 
@@ -106,17 +106,17 @@ The entire store inventory will be displayed followed by the following questions
 ![Command prompt](/assets/images/add.jpg)
 
 
-The product with the updated quantity will be displayed in the menu.
+Once the user presses *Enter*  after entering the quantity, the product is displayed in the inventory with an updated quantity.
 
 ![Command prompt](/assets/images/addcomplete.jpg)
 
-__Note:__ This option will only update products that is already in the store.
+__Note:__ This option will only update products that are currently in inventory at the store.
 
 
 
 ### Add New Product
 
-From the main menu select option 4: __Add a New Product.__ 
+From the main menu, select option 4: __Add a New Product.__ 
 The user will be prompted to enter the following information:
 
 * Manufacturer's name
@@ -125,13 +125,13 @@ The user will be prompted to enter the following information:
 * Quantity
 * Price 
 
-
 &NewLine;
 &nbsp; 
 
 ![Command prompt](/assets/images/addproduct.jpg)
 
-Once the imformation has been entered in the database,  the new product will appear in the store inventory.
+
+Once the user presses *Enter*  after entering the price, the information will  be entered in the database and the new product will appear in the store inventory. 
 
 &NewLine;
 &nbsp; 
