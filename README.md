@@ -14,6 +14,9 @@ The customer interface is called through node.js by typing the following command
 &nbsp; 
 
 Bamazon will first display all of the products available for sale.
+
+ 
+
 ![Command prompt](/assets/images/storefront.jpg)
 
 
@@ -85,7 +88,7 @@ The entire store inventory will be displayed.
 &nbsp; 
 ### View Low Inventory 
 
-From the main menu, select option 2: __View Low inventory__and press *Enter*. 
+From the main menu, select option 2: __View Low inventory__ and press *Enter*. 
 Any items store inventory that as a quantity of less than 5 will be displayed.
 
 ![Command prompt](/assets/images/low.jpg)
@@ -95,7 +98,7 @@ Any items store inventory that as a quantity of less than 5 will be displayed.
 &nbsp; 
 ### Add to Inventory 
 
-From the main menu select option 3: __Add to Inventory__and press *Enter*.   
+From the main menu select option 3: __Add to Inventory__ and press *Enter*.   
 The entire store inventory will be displayed.  The user will then have to answer two prompts:
 * Enter the Id Number: - The id selects the product who's quantity is being increased.
 * Enter the quantity: - The amount of product that will be added.
@@ -183,6 +186,8 @@ The products table contains the following columns:
 ## Website:
 
 https://github.com/JefferyCarmichael/bamazon.git
+
+
 
 
 
